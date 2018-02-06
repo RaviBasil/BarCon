@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/frameLayout">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/scan_shape_round"
+            android:id="@+id/ll_imageView">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_pdf_icon"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ll_imageView"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+                <TextView
+                    android:textColor="#000"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/tv_files_name"
+                    android:text="File Name"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Date"
+                    android:id="@+id/tv_date_modified"/>
+        </RelativeLayout>
+</RelativeLayout>

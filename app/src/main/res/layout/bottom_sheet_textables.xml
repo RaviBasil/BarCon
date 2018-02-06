@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:id="@+id/tv_text" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Favorite"
+            android:id="@+id/btn_add_favorite"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copy to Clipboard"
+            android:id="@+id/btn_copy_clipboard"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_send_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send To"/>
+        <TextView
+            android:layout_marginBottom="15dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_cancel"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+</LinearLayout>
